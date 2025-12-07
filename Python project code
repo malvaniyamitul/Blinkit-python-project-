@@ -1,4 +1,3 @@
-# Load and inspect blinkit_data, then compute KPIs and build requested charts.
 
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -41,7 +40,7 @@ plt.pie(sales_by_fat,lebels=sales_by_fat.index,
 plt.tital("sales by fat content")
 plt.show()
 
-#2).Sales by item type -
+# 2).Sales by item type-
 
 sales_by_type=df.groupby("item type") ("sales").sum()
 plt.figure(figsize(10,6))
@@ -52,6 +51,69 @@ plt.xlebels("item type")
 plt.ylebels("total sales")
 plt.title("total sales by item type")
 
+   for bar in bars:
+  plt.text(bar.get_x()+bar.get_width()/2, bar.get_hight,
+           f'{bar.get_hight:,.of}',ha='center',va='bottom',fountsize=8)
+  
+ plt.show()
 
- 
+
+# 3). Fat content by outlet for total sales -
+
+grouped=df.groupby({"outlet location type","item fat content"})("sales").sum()
+grouped=df.groupby({"regular","Low fat"})
+
+ax=grouped.plot(kind="bar",figsize=(8,5),tital=("outlet tier by fat content")
+plt.xlabel=("outlet location tier")
+plt.ylabel=("total sales")
+plt.legend=(tital="item fat content")
+plt.show()
+
+#4).  Total Sales by Outlet Establishment Year
+
+
+sales_by_year = df.groupby('Outlet Establishment Year')['Sales'].sum().sort_index()
+
+plt.figure(figsize=(9, 5))
+plt.plot(sales_by_year.index, sales_by_year.values, marker='o', linestyle='-')
+
+plt.xlabel('Outlet Establishment Year')
+plt.ylabel('Total Sales')
+plt.title('Outlet Establishment')
+
+for x, y in zip(sales_by_year.index, sales_by_year.values):
+    plt.text(x, y, f'{y:.0f}', ha='center', va='bottom', fontsize=8)
+
+plt.show()
+
+# 5). Sales by Outlet Size -
+
+sales_by_size = df.groupby('Outlet Size')['Sales'].sum()
+
+plt.figure(figsize=(4, 4))
+plt.pie(
+    sales_by_size,
+    labels=sales_by_size.index,
+    autopct='%1.1f%%',
+    startangle=90
+)
+
+plt.title('Outlet Size')
+plt.show()
+
+@ 6). # Sales by Outlet Location-
+
+sales_by_location = df.groupby('Outlet Location Type')['Sales'].sum().reset_index()
+sales_by_location = sales_by_location.sort_values('Sales', ascending=False)
+
+plt.figure(figsize=(8, 3))  # Smaller height, enough width
+ax = sns.barplot(x='Sales', y='Outlet Location Type', data=sales_by_location)
+
+plt.title('Total Sales by Outlet Location Type')
+plt.xlabel('Total Sales')
+plt.ylabel('Outlet Location Type')
+plt.show()
+
+#END........................................................................
+
 
