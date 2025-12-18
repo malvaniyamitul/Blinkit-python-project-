@@ -1,4 +1,4 @@
-#Blinkit Sales Insights & Performance Analysis
+BLINKIT SALES INSIGHTS & PERFORMANCE ANALYSIS 
 
 📌 PROJECT OVERVIEW 
 
