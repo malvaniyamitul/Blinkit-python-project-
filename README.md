@@ -2,7 +2,7 @@ BLINKIT SALES INSIGHTS & PERFORMANCE ANALYSIS
 
 📌 PROJECT OVERVIEW 
 
-This project delivers an end-to-end sales analytics and KPI intelligence solution for Blinkit (India’s last-minute delivery app) using Python, SQL, and Excel.
+This project delivers an end-to-end sales analytics and KPI intelligence solution for Blinkit (India’s last-minute delivery app) using Python, SQL, and Power bi.
 It transforms raw sales data into actionable business insights through structured querying, analysis, and visualization.
 
 
@@ -28,7 +28,7 @@ Python – Data cleaning, EDA, visualization (Pandas, Matplotlib,seborn)
 
 SQL – KPI calculation, aggregations, business queries
 
-Excel – Pivot tables, charts,power query,summary analysis
+Power bi –power query,Dax calculation,charts,summary analysis
 
 _ _ _
 
