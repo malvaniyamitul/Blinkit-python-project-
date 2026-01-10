@@ -163,13 +163,14 @@ Insight-driven Decision Making
 
 ---
 
-👤 AUTHOR 
+  👤 Author
 
-Malvaniya mitul    
+   Malvaniya Mitul
+📌 Aspiring Data Analyst
+💡 Skills: SQL | Excel | Power BI | Python | Tebleu 
 
-Aspiring Data Analyst
 
-Skills: Python | SQL | Excel |Power bi
+
 
 
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
