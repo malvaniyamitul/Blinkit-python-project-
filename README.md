@@ -167,7 +167,7 @@ Insight-driven Decision Making
 
    Malvaniya Mitul
 📌 Aspiring Data Analyst
-💡 Skills: SQL | Excel | Power BI | Python | Tebleu 
+💡 Skills: SQL | Excel | Power BI | Python | Tebleau 
 
 
 
